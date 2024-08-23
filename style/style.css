@@ -1,0 +1,78 @@
+:root {
+  --txt: #192040;
+  --main: #ff2e51;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "GB";
+  src: url("../assets/fonts/gilroy-bold.eot");
+  src: url("../assets/fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/gilroy-bold.woff2") format("woff2"), url("../assets/fonts/gilroy-bold.woff") format("woff"),
+    url("../assets/fonts/gilroy-bold.ttf") format("truetype"),
+    url("../assets/fonts/gilroy-bold.svg#gilroy-bold") format("svg");
+}
+
+@font-face {
+  font-family: "GS";
+  src: url("../assets/fonts/gilroy-semibold.eot");
+  src: url("../assets/fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/gilroy-semibold.woff2") format("woff2"),
+    url("../assets/fonts/gilroy-semibold.woff") format("woff"),
+    url("../assets/fonts/gilroy-semibold.ttf") format("truetype"),
+    url("../assets/fonts/gilroy-semibold.svg#gilroy-semibold") format("svg");
+}
+
+@font-face {
+  font-family: "GR";
+  src: url("../assets/fonts/gilroy-regular.eot");
+  src: url("../assets/fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/gilroy-regular.woff2") format("woff2"),
+    url("../assets/fonts/gilroy-regular.woff") format("woff"),
+    url("../assets/fonts/gilroy-regular.ttf") format("truetype"),
+    url("../assets/fonts/gilroy-regular.svg#gilroy-regular") format("svg");
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--txt);
+  font-family: "GR", sans-serif;
+}
+
+.advert {
+  background: linear-gradient(80.04deg, #ffb862 0%, #ff9a3d 20.13%, #d3e5cf 65.66%, #697466 100%);
+}
+
+.advert__wrapper {
+  margin: 0 auto;
+  max-width: 950px;
+  background-image: url("../assets/img/header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+
+.advert__text {
+  font-family: "GB", sans-serif;
+  line-height: 1.4;
+  color: var(--white);
+}
+
+.advert__button {
+  font-family: "GB", sans-serif;
+  color: var(--white);
+  font-size: 14px;
+  border: 1px solid var(--white);
+  padding: 8px 20px 8px 20px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: 0.3s ease-in;
+  /* margin-left: 50px; */
+  margin: 7px 0 7px 50px;
+}
+
+.advert__button:hover {
+  transform: scale(0.8);
+}

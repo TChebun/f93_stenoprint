@@ -1,50 +1,59 @@
-:root {
-  --txt: #192040;
-  --main: #ff2e51;
-  --white: #ffffff;
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: #192040;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #192040;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
 }
 
 @font-face {
   font-family: "GB";
   src: url("../assets/fonts/gilroy-bold.eot");
-  src: url("../assets/fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/gilroy-bold.woff2") format("woff2"), url("../assets/fonts/gilroy-bold.woff") format("woff"),
-    url("../assets/fonts/gilroy-bold.ttf") format("truetype"),
-    url("../assets/fonts/gilroy-bold.svg#gilroy-bold") format("svg");
+  src: url("../assets/fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-bold.woff2") format("woff2"), url("../assets/fonts/gilroy-bold.woff") format("woff"), url("../assets/fonts/gilroy-bold.ttf") format("truetype"), url("../assets/fonts/gilroy-bold.svg#gilroy-bold") format("svg");
 }
-
 @font-face {
   font-family: "GS";
   src: url("../assets/fonts/gilroy-semibold.eot");
-  src: url("../assets/fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/gilroy-semibold.woff2") format("woff2"),
-    url("../assets/fonts/gilroy-semibold.woff") format("woff"),
-    url("../assets/fonts/gilroy-semibold.ttf") format("truetype"),
-    url("../assets/fonts/gilroy-semibold.svg#gilroy-semibold") format("svg");
+  src: url("../assets/fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-semibold.woff2") format("woff2"), url("../assets/fonts/gilroy-semibold.woff") format("woff"), url("../assets/fonts/gilroy-semibold.ttf") format("truetype"), url("../assets/fonts/gilroy-semibold.svg#gilroy-semibold") format("svg");
 }
-
 @font-face {
   font-family: "GR";
   src: url("../assets/fonts/gilroy-regular.eot");
-  src: url("../assets/fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/gilroy-regular.woff2") format("woff2"),
-    url("../assets/fonts/gilroy-regular.woff") format("woff"),
-    url("../assets/fonts/gilroy-regular.ttf") format("truetype"),
-    url("../assets/fonts/gilroy-regular.svg#gilroy-regular") format("svg");
+  src: url("../assets/fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-regular.woff2") format("woff2"), url("../assets/fonts/gilroy-regular.woff") format("woff"), url("../assets/fonts/gilroy-regular.ttf") format("truetype"), url("../assets/fonts/gilroy-regular.svg#gilroy-regular") format("svg");
 }
-
-body {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--txt);
-  font-family: "GR", sans-serif;
+.main-header__links, .main-header__item, .main-header__box, .main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .advert {
   background: linear-gradient(80.04deg, #ffb862 0%, #ff9a3d 20.13%, #d3e5cf 65.66%, #697466 100%);
 }
-
 .advert__wrapper {
   margin: 0 auto;
   max-width: 950px;
@@ -53,26 +62,116 @@ body {
   background-size: contain;
   background-position: center right;
 }
-
 .advert__text {
   font-family: "GB", sans-serif;
   line-height: 1.4;
-  color: var(--white);
+  color: #ffffff;
 }
-
 .advert__button {
   font-family: "GB", sans-serif;
-  color: var(--white);
+  color: #ffffff;
   font-size: 14px;
-  border: 1px solid var(--white);
+  border: 1px solid #ffffff;
   padding: 8px 20px 8px 20px;
   border-radius: 50px;
   background-color: transparent;
   transition: 0.3s ease-in;
-  /* margin-left: 50px; */
   margin: 7px 0 7px 50px;
 }
-
 .advert__button:hover {
   transform: scale(0.8);
+}
+
+.main-header {
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  max-width: 1430px;
+  margin: 0 auto;
+}
+.main-header__wrapper {
+  width: 100%;
+}
+.main-header__box {
+  align-items: center;
+  -moz-column-gap: 31px;
+       column-gap: 31px;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ededf2;
+}
+.main-header__input {
+  width: 100%;
+  position: relative;
+}
+.main-header__input label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  margin-top: -8px;
+}
+.main-header__input input {
+  width: 100%;
+  font-size: 16px;
+  font-family: "GS", sans-serif;
+  line-height: 1.4;
+  padding: 15px 56px;
+  border: 1px solid #ededf2;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.main-header__item {
+  width: 100%;
+}
+.main-header__item__box {
+  display: flex;
+  flex-direction: column;
+}
+.main-header__item__box span {
+  font-family: "GR", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #828299;
+  margin-bottom: 6px;
+}
+.main-header__item__box a {
+  font-family: "GS", sans-serif;
+  font-size: 22px;
+  line-height: 1.3;
+  transition: 0.3s;
+}
+.main-header__item__box a:hover {
+  color: #ff2e51;
+}
+.main-header__links {
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.main-header__links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #ededf2;
+  transition: 0.3s;
+}
+.main-header__links a svg {
+  fill: #192040;
+  transition: 0.3s;
+}
+.main-header__links a:hover {
+  border-color: #ff2e51;
+}
+.main-header__links a:hover svg {
+  fill: #ff2e51;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #192040;
+  font-family: "GR", sans-serif;
 }

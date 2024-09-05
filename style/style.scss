@@ -1,0 +1,13 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+@import "extend";
+@import "header";
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: $txt;
+  font-family: "GR", sans-serif;
+}

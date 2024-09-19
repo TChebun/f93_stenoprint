@@ -3,6 +3,7 @@
 @import "fonts";
 @import "extend";
 @import "header";
+@import "main";
 
 body {
   margin: 0;
@@ -10,4 +11,16 @@ body {
   font-weight: 400;
   color: $txt;
   font-family: "GR", sans-serif;
+  background-image: url("../assets/img/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1430px;
 }

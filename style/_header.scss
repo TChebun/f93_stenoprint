@@ -18,7 +18,7 @@
   &__button {
     font-family: "GB", sans-serif;
     color: $white;
-    font-size: 14px;
+    font-size: 0.875rem;
     border: 1px solid $white;
     padding: 8px 20px 8px 20px;
     border-radius: 50px;
@@ -34,9 +34,8 @@
 
 .main-header {
   @extend %df_sb;
-  column-gap: 100px;
-  max-width: 1430px;
-  margin: 0 auto;
+  background-color: #fffefc;
+  border-bottom: 1px solid $sep;
 
   &__wrapper {
     width: 100%;
@@ -63,7 +62,7 @@
 
     input {
       width: 100%;
-      font-size: 16px;
+      font-size: 1rem;
       font-family: "GS", sans-serif;
       line-height: 1.4;
       padding: 15px 56px;
@@ -83,7 +82,7 @@
 
       span {
         font-family: "GR", sans-serif;
-        font-size: 12px;
+        font-size: 0.74rem;
         line-height: 1.4;
         color: $txt2;
         margin-bottom: 6px;
@@ -91,7 +90,7 @@
 
       a {
         font-family: "GS", sans-serif;
-        font-size: 22px;
+        font-size: 1.375rem;
         line-height: 1.3;
         transition: 0.3s;
         &:hover {
@@ -127,5 +126,41 @@
         }
       }
     }
+  }
+}
+
+.menu {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+    margin: 1.25rem 0;
+  }
+
+  &__link {
+    @extend %bold;
+    transition: 0.3s ease-in;
+    &:hover {
+      color: $main;
+    }
+  }
+
+  .active-nav {
+    background-color: $main;
+    padding: 16px 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    a {
+      color: $white;
+    }
+  }
+
+  .nav-close {
+    background-color: transparent;
+    border: 0;
   }
 }

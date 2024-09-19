@@ -1,0 +1,35 @@
+.main-slider {
+  margin-top: 3.125rem;
+  &__wrapper {
+    position: relative;
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    .owl-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      .owl-dot {
+        width: 100px;
+        height: 2px;
+        background-color: rgba(255, 254, 252, 0.2);
+        &.active {
+          background-color: rgba(255, 254, 252, 1);
+        }
+      }
+    }
+  }
+  &__box {
+    img {
+      border-radius: 30px;
+    }
+  }
+}
